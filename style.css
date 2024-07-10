@@ -54,20 +54,20 @@ body{
   transition: 0.3s ease;
 }
 
-
 span {
   color: var(--main-color)
 }
+
 .navbar a{
   font-size: 1.6rem;
   color: var(--text-color);
   margin-left: 4rem;
   font-weight: 300;
   border-bottom: 1px solid transparent;
-  transition: 0.1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .navbar a:hover{
-  
+  text-decoration-line: underline;
 }
 
 section {
@@ -103,6 +103,84 @@ section {
   font-size: 3.6rem;
   font-weight: 600;
   margin: 1rem 0;
+}
+
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+.text-animation span{
+  position: relative;
+  z-index: -1;
+}
+
+.text-animation span::before{
+  content: "Web Developer";
+  color: var(--main-color);
+  animation: words 20s infinite;
+}
+
+.text-animation span::after{
+  content: "";
+  background: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--bg-color);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+  to {
+    border-left: 2px solid var(--main-color);
+  }
+}
+@keyframes words{
+  0%,
+  20%{
+    content: "Frontend Designer";
+  }
+  21%,
+  40%{
+    content: "Web Designer";
+  }
+  41%,
+  60%{
+    content: "UI/UX Designer";
+  }
+  61%,
+  80%{
+    content: "Web Developer";
+  }
+  81%,
+  100%{
+    content: "Software Engineer";
+  }
+}
+@keyframes typing{
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95%{
+    width: 0;
+  }
+  50%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  80%,
+  85%{
+    width: calc(100% + 8px);
+  }
 }
 
 .home-content p {
@@ -188,7 +266,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  /*background-color: var(--second-bg-color);*/
+  background-color: var(--second-bg-color);
 }
 
 .about-img img{
@@ -261,3 +339,29 @@ section {
 .about-me p{
   font-size: 1.8rem;
 }
+
+.scroller {
+  max-width: 100%;
+  font-size: 8rem;
+}
+
+.scroller__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 1rem;
+  flex-wrap: nowrap;
+  color: #26b3ea;
+}
+
+.scroller__inner i{
+  text-shadow: #26b3ea 1px 1px 55px;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  mask: linear-gradient();
+}
+
+
+
