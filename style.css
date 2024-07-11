@@ -64,10 +64,10 @@ span {
   margin-left: 4rem;
   font-weight: 300;
   border-bottom: 1px solid transparent;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .navbar a:hover{
-  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.726);
 }
 
 section {
@@ -108,7 +108,7 @@ section {
 .text-animation {
   font-size: 34px;
   font-weight: 600;
-  min-width: 280px;
+  min-width: 450px;
 }
 .text-animation span{
   position: relative;
@@ -341,20 +341,19 @@ section {
 }
 
 .scroller {
-  max-width: 100%;
+  width: 100vw;
   font-size: 8rem;
+  margin: 0;
+  padding: 0;
 }
 
 .scroller__inner{
   display: flex;
-  gap: 10rem;
-  padding-block: 1;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 14rem;
   flex-wrap: nowrap;
   color: #26b3ea;
-}
-
-.scroller__inner i{
-  text-shadow: #26b3ea 1px 1px 10px;
 }
 
 .scroller[data-animated="true"] {
@@ -364,12 +363,12 @@ section {
 }
 
 .scroller[data-animated="true"] .scroller__inner {
-  animation: scroll 20s linear infinite;
+  animation: scroll 20s infinite linear;
 }
 
 @keyframes scroll{
   to {
-    transform: translate(calc(-50% - 5rem))
+    transform: translate(calc(-50% - 7rem))
   }
 }
 
