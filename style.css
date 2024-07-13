@@ -14,15 +14,16 @@ html {
   overflow-x: hidden;
 }
 :root {
-  --bg-color: #000000;
+  --bg-color: black;
   --second-bg-color: #120004;
-  --text-color: rgb(255, 255, 255);
+  --text-color: white;
   --main-color: #ea2657;
+  --color1: #ea2657;
 }
 
 
 body{
-  background: rgb(0, 0, 0);
+  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -38,7 +39,7 @@ body{
 }
 
 .shape-blob {
-	background:#ab0c34;
+	background: var(--main-color);
 	height: 90px;
 	width: 180px;
 	border-radius: 40% 50% 30% 40%;
@@ -51,7 +52,7 @@ body{
 	top: 40%;
 }
 .shape-blob.one{
-	background:#952b45;
+	background:var(--main-color);
 	height: 150px;
 	width: 200px;
 	left: 10px;
@@ -61,7 +62,7 @@ body{
 }
 
 .shape-blob.six{
-	background:#ea2657;
+	background:var(--main-color);
 	height: 70px;
 	width: 100px;
 	left: 160px;
@@ -71,7 +72,7 @@ body{
 }
 
 .shape-blob.four{
-	background:#ea2657;
+	background:var(--main-color);
 	height: 100px;
 	width: 80px;
 	left: 350px;
@@ -81,7 +82,7 @@ body{
 }
 
 .shape-blob.five{
-	background:#ea2657;
+	background:var(--main-color);
 	height: 100px;
 	width: 80px;
 	left: 480px;
@@ -91,7 +92,7 @@ body{
 }
 
 .shape-blob.two{
-	background:#ea2657;
+	background:var(--main-color);
 	height: 150px;
 	width: 150px;
 	left: 600px;
@@ -101,7 +102,7 @@ body{
 }
 
 .shape-blob.three{
-	background:#ea2657;
+	background:var(--main-color);
 	height: 150px;
 	width: 150px;
 	left: 800px;
