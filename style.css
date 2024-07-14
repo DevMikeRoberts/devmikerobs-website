@@ -404,7 +404,10 @@ section {
   align-items: center;
   gap: 10rem;
   background-color: var(--bg-color);
-  padding: 20rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 20rem;
+  padding-top: 20rem;
 }
 
 .about-img img{
@@ -433,6 +436,7 @@ section {
 
 .about-content p{
   font-size: calc(1vw + 1vh);
+  line-height: 4rem;
 }
 
 .about-content .btn{
