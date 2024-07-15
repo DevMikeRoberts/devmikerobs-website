@@ -234,6 +234,12 @@ section {
   margin: 1rem 0;
 }
 
+.prev{
+  color: orange;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
 .text-animation {
   font-size: 34px;
   font-weight: 600;
@@ -406,8 +412,8 @@ section {
   background-color: var(--bg-color);
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-bottom: 20rem;
-  padding-top: 20rem;
+  padding-bottom: 12rem;
+  padding-top: 18rem;
 }
 
 .about-img img{
@@ -436,7 +442,7 @@ section {
 
 .about-content p{
   font-size: calc(1vw + 1vh);
-  line-height: 4rem;
+  line-height: 5rem;
 }
 
 .about-content .btn{
@@ -497,6 +503,100 @@ section {
   to {
     transform: translate(calc(-50% - 7rem))
   }
+}
+
+.contact{
+  background-color: var(--second-bg-color);
+}
+
+.contact h2{
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-size: 6rem;
+}
+
+.contact form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.5rem 0;
+  resize: none;
+}
+
+.contact form .btn{
+  margin-top: 2rem;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 0;
+  background-color: #23000970;
+}
+
+.footer .social-icons{
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--main-color);
+}
+
+.footer .social-icons a{
+  font-size: 25px;
+  border: 2px solid var(--main-color);
+  margin: 0 10px;
+}
+
+footer ul{
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  gap: 3rem;
+  text-align: center;
+}
+
+.footer ul li a{
+  color: white;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.footer ul li a:hover{
+  border-bottom: 1px solid white;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright{
+  margin-top: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-color);
 }
 
 
