@@ -671,22 +671,26 @@ footer ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    translate: 0px -100px;
+    translate: 0px -460px;
   }
   .home-content h3{
-    font-size: 2.6;
+    font-size: 2.6rem;
   }
   .home-content h1{
     font-size: 8rem;
     margin-top: 3rem;
   }
   .home-content p{
-    font-size: 20px;
+    font-size: 25px;
     max-width: 600px;
     margin: 0px 35px;
   }
   .home-img {
     margin: 4px 0;
+  }
+  .home-img spline-viewer{
+    scale: 60%;
+    translate: 0px -170px;
   }
   .about-container {
     flex-direction: column;
