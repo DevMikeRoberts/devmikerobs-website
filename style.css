@@ -664,6 +664,7 @@ footer ul{
     flex-direction: column-reverse;
     margin: 5rem 3rem;
     gap: 3rem;
+    height: 1000px;
   }
   .home-content{
     display: flex;
@@ -671,7 +672,7 @@ footer ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    translate: 0px -460px;
+    translate: 0px -80px;
   }
   .home-content h3{
     font-size: 2.6rem;
@@ -689,8 +690,8 @@ footer ul{
     margin: 4px 0;
   }
   .home-img spline-viewer{
-    scale: 60%;
-    translate: 0px -170px;
+    scale: 100%;
+    translate: 0px 20px;
   }
   .about-container {
     flex-direction: column;
