@@ -616,7 +616,7 @@ footer ul{
     padding: 2rem;
   }
   section{
-    padding: 10rem 3% 2rem
+    padding: 10rem 3% 2rem;
   }
   .contact form{
     flex-direction: column;
@@ -630,9 +630,13 @@ footer ul{
   #menu-icon{
     display: block;
   }
+  .body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .navbar{
     position: absolute;
-    top: 6%;
+    top: 6vh;
     right: 0;
     width: 30%;
     padding: 1rem 3%;
@@ -667,7 +671,7 @@ footer ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    translate: 15px -100px;
+    translate: 0px -100px;
   }
   .home-content h3{
     font-size: 2.6;
@@ -681,9 +685,8 @@ footer ul{
     max-width: 600px;
     margin: 0px 35px;
   }
-  .home-img img{
-    max-width: 56vw;
-    margin: 3rem 0;
+  .home-img {
+    margin: 4px 0;
   }
   .about-container {
     flex-direction: column;
@@ -705,6 +708,9 @@ footer ul{
   }
   .about-content p{
     font-size: 18px;
+  }
+  .scroller{
+    translate: 0px -50px;
   }
 
 }
