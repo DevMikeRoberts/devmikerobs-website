@@ -34,15 +34,15 @@ body{
 	position: absolute;
 	width: 100%;
   height: 100%;
-  filter: blur(80px);
+  filter: blur(120px);
   z-index: -1;
 /*   background: rgba(255,255,255,0.1) */
 }
 
 .shape-blob {
-	background: var(--main-color);
-	height: 90px;
-	width: 180px;
+	background: olive;
+	height: 300px;
+	width: 400px;
 	border-radius: 40% 50% 30% 40%;
   	animation: 
 		transform 18s ease-in-out infinite both alternate,
@@ -53,8 +53,8 @@ body{
 	top: 40%;
 }
 .shape-blob.one{
-	background:var(--main-color);
-	height: 150px;
+	background: purple;
+	height: 350px;
 	width: 200px;
 	left: 10px;
 	top: 100px;
@@ -73,9 +73,9 @@ body{
 }
 
 .shape-blob.four{
-	background:var(--main-color);
-	height: 100px;
-	width: 80px;
+	background: var(--main-color);
+	height: 200px;
+	width: 50px;
 	left: 350px;
 	top: 450px;
 	transform: rotate(-180deg);
@@ -84,7 +84,7 @@ body{
 
 .shape-blob.five{
 	background:var(--main-color);
-	height: 100px;
+	height: 350px;
 	width: 80px;
 	left: 480px;
 	top: 30px;
@@ -93,8 +93,8 @@ body{
 }
 
 .shape-blob.two{
-	background:var(--main-color);
-	height: 150px;
+	background:orange;
+	height: 350px;
 	width: 150px;
 	left: 600px;
 	top: 150px;
@@ -103,11 +103,11 @@ body{
 }
 
 .shape-blob.three{
-	background:var(--main-color);
-	height: 150px;
-	width: 150px;
-	left: 800px;
-	top: 30px;
+	background:olivedrab;
+	height: 450px;
+	width: 250px;
+	left: 1000px;
+	top: 0px;
 	transform: rotate(-180deg);
 	animation: transform 7s ease-in-out infinite both alternate, movement_two 23s ease-in-out infinite both;
 }
