@@ -352,8 +352,8 @@ section {
 }
 
 .about-content {
-  background-image: radial-gradient(#ea26579a 0%, #ea265768 20%, 
-                                    transparent 70%);
+  /*background-image: radial-gradient(#ea26579a 0%, #ea265768 20%, 
+                                    transparent 70%);*/
 }
 
 .about-content h2{
@@ -364,7 +364,8 @@ section {
 
 .about-content p{
   font-size: calc(1vw + 1vh);
-  line-height: 4rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .about-content .btn{
@@ -606,9 +607,7 @@ footer ul{
     max-width: 600px;
     margin: 0px 35px;
   }
-  .home-img {
-    margin: 4px 0;
-  }
+
   .home-img spline-viewer{
     display: none;
   }
@@ -617,6 +616,8 @@ footer ul{
     height: 100%;
     width: 100%;
     max-height: 800px;
+    max-width: 600px;
+    margin: auto;
   }
   
   .about-container {
@@ -638,7 +639,7 @@ footer ul{
     width: 50vw;
   }
   .about-content p{
-    font-size: 18px;
+    font-size: 20px;
   }
   .scroller{
     translate: 0px -40px;
