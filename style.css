@@ -442,7 +442,7 @@ section {
 
 .about-content p{
   font-size: calc(1vw + 1vh);
-  line-height: 5rem;
+  line-height: 4rem;
 }
 
 .about-content .btn{
@@ -552,7 +552,7 @@ section {
   bottom: 0;
   width: 100%;
   padding: 25px 0;
-  background-color: #23000970;
+  background-color: black;
 }
 
 .footer .social-icons{
@@ -599,5 +599,114 @@ footer ul{
   color: var(--text-color);
 }
 
+
+@media(max-width: 1285px) {
+  html{
+    font-size: 55%;
+  }
+  .services-container{
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0 5rem;
+  }
+}
+
+@media(max-width:991px) {
+  header{
+    padding: 2rem;
+  }
+  section{
+    padding: 10rem 3% 2rem
+  }
+  .contact form{
+    flex-direction: column;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+
+@media(max-width:895px) {
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 6%;
+    right: 0;
+    width: 30%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.498);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    /*border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);*/
+    display: none;
+    z-index: 4;
+  }
+  .navbar.active{
+    display: block;
+  }
+  .background-noise{
+    height: 210%;
+  }
+  .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: white;
+  }
+  .home {
+    flex-direction: column-reverse;
+    margin: 5rem 3rem;
+    gap: 3rem;
+  }
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    translate: 15px -100px;
+  }
+  .home-content h3{
+    font-size: 2.6;
+  }
+  .home-content h1{
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+  .home-content p{
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0px 35px;
+  }
+  .home-img img{
+    max-width: 56vw;
+    margin: 3rem 0;
+  }
+  .about-container {
+    flex-direction: column;
+    padding: 10rem 9% 10rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-content .btn-group{
+    align-items: center;
+    justify-content: center;
+  }
+  .about h2{
+    margin: 3rem 0;
+    text-align: center;
+  }
+  .about img{
+    width: 50vw;
+  }
+  .about-content p{
+    font-size: 18px;
+  }
+
+}
 
 
