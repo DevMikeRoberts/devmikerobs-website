@@ -299,12 +299,12 @@ section {
   font-size: 1.6rem;
   color: white;
   border: 1px solid transparent;
-  font-weight: 600;
-  transition: 0.3s ease-in-out; 
+  font-weight: 400;
+  transition: 0.2s ease-in-out; 
 }
 
 .btn:hover{
-  border: 1px solid white;
+  background-color: #a8183c;
 }
 
 .btn-group a:nth-of-type(2) {
@@ -315,8 +315,8 @@ section {
 }
 
 .btn-group a:nth-of-type(2):hover{
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--main-color);
+  color: #a8183c;
 }
 
 .about {
