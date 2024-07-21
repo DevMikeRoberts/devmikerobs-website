@@ -16,10 +16,10 @@ html {
 }
 :root {
   --bg-color: black;
-  --second-bg-color: #120004;
+  --second-bg-color: #000115;
   --text-color: white;
-  --main-color: #ea2657;
-  --color1: #ea2657;
+  --main-color: #26c9ea;
+  --color1: #1a8da4;
 }
 
 
@@ -36,11 +36,11 @@ body{
   height: 100%;
   filter: blur(120px);
   z-index: -1;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0);
 }
 
 .shape-blob {
-	background: olive;
+	background: rgb(28, 117, 176);
 	height: 300px;
 	width: 400px;
 	border-radius: 40% 50% 30% 40%;
@@ -53,7 +53,7 @@ body{
 	top: 40%;
 }
 .shape-blob.one{
-	background: purple;
+	background: rgb(21, 101, 151);
 	height: 350px;
 	width: 200px;
 	left: 10px;
@@ -93,7 +93,7 @@ body{
 }
 
 .shape-blob.two{
-	background:orange;
+	background:rgb(37, 141, 183);
 	height: 350px;
 	width: 150px;
 	left: 600px;
@@ -103,7 +103,7 @@ body{
 }
 
 .shape-blob.three{
-	background:olivedrab;
+	background:rgba(46, 95, 185, 0.723);
 	height: 450px;
 	width: 250px;
 	left: 1000px;
@@ -183,7 +183,7 @@ body{
 }
 
 span {
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
 .navbar a{
@@ -216,7 +216,6 @@ section {
   align-items: left;
   text-align: left;
   translate: 50px -110px;
-
 }
 
 .home-content h1 {
@@ -303,7 +302,7 @@ section {
 }
 
 .btn:hover{
-  background-color: #a8183c;
+  background-color: var(--color1);
 }
 
 .btn-group a:nth-of-type(2) {
@@ -315,7 +314,7 @@ section {
 
 .btn-group a:nth-of-type(2):hover{
   border: 1px solid var(--main-color);
-  color: #a8183c;
+  color: var(--color1);
 }
 
 .about {
@@ -586,13 +585,16 @@ footer ul{
     translate: 0px -150px;
   }
   .home-content h3{
-    font-size: 2.6rem;
+    font-size: 4.6rem;
+    translate: 0px -20px;
   }
+
   .home-content h1{
     font-size: 8rem;
     margin-top: 3rem;
-    translate: 0px -35px;
+    margin-bottom: 3rem;
   }
+
   .home-content p{
     font-size: 25px;
     max-width: 600px;
